@@ -3,11 +3,15 @@ import headerLogo from '../../assets/logo-header.png'
  
 function Header() {
     return (
-        <nav>
+        <header>
             <img src={headerLogo} alt="Logo" />
-            <Link to='/'>Accueil</Link>
-            <Link to='/About'>A propos</Link>
-        </nav>
+            <nav className='navbar'>
+                <ul>
+                    <li><Link to='/'>Accueil</Link></li>
+                    <li><Link to='/About'>A Propos</Link></li>
+                </ul>
+            </nav>
+        </header>
     )
 }
 

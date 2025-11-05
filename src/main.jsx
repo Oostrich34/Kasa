@@ -7,6 +7,7 @@ import Logements from './pages/Logements'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
+import './index.scss'
 
 const container = document.getElementById('root')
 const root = createRoot(container)
