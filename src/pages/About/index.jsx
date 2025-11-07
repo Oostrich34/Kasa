@@ -1,7 +1,9 @@
 function About() {
   return (
-    <div>
-      <h1> A propos </h1>
+    <div className="container">
+      <div className="about-banner banner">
+        <img src="../src/assets/montagne.png" alt="Un paysage avec des montagnes" />
+      </div>
     </div>
   )
 }

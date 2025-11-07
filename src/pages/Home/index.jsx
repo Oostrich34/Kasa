@@ -9,7 +9,7 @@ function Home() {
   // rendu
   return (
     <div className="container">
-      <div className="banner">
+      <div className="home-banner banner">
         <img src="../src/assets/falaise.png" alt="Une falaise en bord de mer" />
         <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
       </div>

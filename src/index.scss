@@ -1,4 +1,11 @@
 $main-color: #FF6060;
+@mixin banner {
+  display: flex;
+  height: 250px;
+  width: 1240px;
+	border-radius: 20px;
+	object-fit: cover;
+}
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -53,12 +60,8 @@ nav ul li a {
   align-items: center;
 }
 
-.banner img {
-  display: flex;
-  height: 250px;
-  width: 1240px;
-	border-radius: 20px;
-	object-fit: cover;
+.home-banner img {
+  @include banner;
   filter: brightness(50%);
 }
 
@@ -67,6 +70,15 @@ nav ul li a {
   color: #fff;
   font-size: 48px;
 }
+
+
+/****************************/
+/******** ABOUT PAGE ********/
+/****************************/
+.about-banner img {
+  @include banner;
+}
+
 
 /****************************/
 /******** ERROR PAGE ********/
