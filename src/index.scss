@@ -6,10 +6,12 @@ $main-color: #FF6060;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-/* HEADER */
+/****************************/
+/********* HEADER ***********/
+/****************************/
 header {
   display: flex;
   justify-content: space-around;
@@ -38,8 +40,37 @@ nav ul li a {
   font-weight: 500;
 }
 
+/****************************/
+/******** HOME PAGE *********/
+/****************************/
+.container {
+  margin-top: 50px;
+}
 
-/* ERROR PAGE*/
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  display: flex;
+  height: 250px;
+  width: 1240px;
+	border-radius: 20px;
+	object-fit: cover;
+  filter: brightness(50%);
+}
+
+.banner-title {
+  position: absolute;
+  color: #fff;
+  font-size: 48px;
+}
+
+/****************************/
+/******** ERROR PAGE ********/
+/****************************/
 .errorPage {
   display: flex;
   flex-direction: column;

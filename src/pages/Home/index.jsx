@@ -8,8 +8,11 @@ function Home() {
 
   // rendu
   return (
-    <div>
-      <h1> Page d'accueil 🏠</h1>
+    <div className="container">
+      <div className="banner">
+        <img src="../src/assets/falaise.png" alt="Une falaise en bord de mer" />
+        <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
+      </div>
     </div>
   )
 }
