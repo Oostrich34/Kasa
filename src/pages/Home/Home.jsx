@@ -1,3 +1,6 @@
+import falaise from '../../assets/falaise.png'
+import '../../styles/index.scss';
+
 function Home() {
 
   // hooks
@@ -10,7 +13,7 @@ function Home() {
   return (
     <div className="container">
       <div className="home-banner banner">
-        <img src="../src/assets/falaise.png" alt="Une falaise en bord de mer" />
+        <img src={falaise} alt="Une falaise en bord de mer" />
         <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
       </div>
     </div>
