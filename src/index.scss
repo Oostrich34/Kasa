@@ -8,17 +8,48 @@ $main-color: #FF6060;
 	object-fit: cover;
 }
 
-* {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
+@mixin dropdown-container {
+  margin-top: 2rem;
+  background: #F6F6F6;
+  border-radius: 5px;
+  width: 1023px;
 }
 
-body {
+@mixin dropdown-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $main-color;
+  border-radius: 5px;
+  padding: 15px 15px;
+  color: #fff;
+}
+
+@mixin dropdown-description {
+  padding: 5px 15px;
+  display: none;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, h2 {
   margin: 0;
 }
 
 .container {
-  margin: 5rem 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chevron {
+  font-size: 1.5rem;
+  .chevronUp__icon {
+    display: none;
+  }
 }
 
 /****************************/
@@ -42,6 +73,7 @@ header {
   text-decoration: none;
   font-size: 24px;
   font-weight: 500;
+  color: black;
   }
   a:hover {
     text-decoration: underline;
@@ -52,12 +84,6 @@ header {
 /****************************/
 /******** HOME PAGE *********/
 /****************************/
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .home-banner img {
   @include banner;
   filter: brightness(50%);
@@ -76,7 +102,15 @@ header {
 .about-banner img {
   @include banner;
 }
-
+.dropdown-container {
+  @include dropdown-container;
+  .dropdown-title {
+    @include dropdown-title;
+  }
+  .dropdown-description {
+    @include dropdown-description;
+  }
+}
 
 /****************************/
 /******** ERROR PAGE ********/
