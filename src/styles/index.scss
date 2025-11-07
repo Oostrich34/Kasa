@@ -1,0 +1,13 @@
+@import './variables';
+@import './mixins';
+@import './reset';
+
+@import '../pages/Home/_home.scss';
+@import '../pages/About/about';
+
+@import '../components/Header/header';
+@import '../components/Footer/footer';
+@import '../components/Dropdown/dropdown';
+@import '../components/Error/error';
+
+

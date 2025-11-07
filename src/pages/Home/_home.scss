@@ -1,0 +1,16 @@
+.home-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-banner img {
+  @include banner;
+  filter: brightness(50%);
+}
+
+.banner-title {
+  position: absolute;
+  color: #fff;
+  font-size: 48px;
+}

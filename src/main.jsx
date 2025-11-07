@@ -1,13 +1,13 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
+import Home from './pages/Home/Home.jsx'
+import About from './pages/About/About.jsx'
 import Logements from './pages/Logements'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Error from './components/Error'
-import './index.scss'
+import Header from './components/Header/Header.jsx'
+import Footer from './components/Footer/Footer.jsx'
+import Error from './components/Error/Error.jsx'
+import './styles/index.scss'
 
 const container = document.getElementById('root')
 const root = createRoot(container)

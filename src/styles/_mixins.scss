@@ -1,0 +1,28 @@
+@mixin banner {
+  display: flex;
+  height: 250px;
+  width: 1240px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+@mixin dropdown-container {
+  margin-top: 2rem;
+  background: $secondary-color;
+  border-radius: 5px;
+  width: 1023px;
+}
+
+@mixin dropdown-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $main-color;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+}
+
+@mixin dropdown-content {
+  padding: 15px;
+}
