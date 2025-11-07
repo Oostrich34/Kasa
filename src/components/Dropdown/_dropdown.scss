@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.dropdown-container {
+  @include dropdown-container;
+
+  .dropdown-title {
+    @include dropdown-title;
+  }
+
+  .dropdown-description {
+    @include dropdown-content;
+  }
+}
