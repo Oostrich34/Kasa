@@ -6,8 +6,8 @@ function Dropdown({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="dropdown-container">
-      <div className="dropdown-title" onClick={() => setIsOpen(prev => !prev)}>
+    <div className="dropdown">
+      <div className="dropdown__title" onClick={() => setIsOpen(prev => !prev)}>
         <h2>{title}</h2>
         {isOpen ? (
           <FaChevronUp className="chevronUp__icon" />
@@ -17,7 +17,7 @@ function Dropdown({ title, children }) {
       </div>
 
       {isOpen && (
-        <div className="dropdown-description">
+        <div className="dropdown__content">
           {children}
         </div>
       )}

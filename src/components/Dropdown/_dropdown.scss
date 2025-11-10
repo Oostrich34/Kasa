@@ -1,11 +1,20 @@
-.dropdown-container {
-  @include dropdown-container;
+.dropdown {
+  margin-top: 2rem;
+  background: $secondary-color;
+  border-radius: 5px;
+  width: 1023px;
 
-  .dropdown-title {
-    @include dropdown-title;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $main-color;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
   }
 
-  .dropdown-description {
-    @include dropdown-content;
+  &__content {
+    padding: 15px;
   }
 }
