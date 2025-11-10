@@ -2,11 +2,12 @@
 @import './mixins';
 @import './reset';
 
-@import '../pages/Home/_home.scss';
+@import '../pages/Home/home';
 @import '../pages/About/about';
 
 @import '../components/Header/header';
 @import '../components/Footer/footer';
+@import '../components/Card/card';
 @import '../components/Dropdown/dropdown';
 @import '../components/Error/error';
 
