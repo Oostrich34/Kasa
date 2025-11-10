@@ -5,10 +5,21 @@ const Card = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch('/logements.json')
-        .then(response => response.json())
-        .then(data => setData(data))
-        .catch(error => console.error('Error fetching data:', error));
+        // Définition d'une fonction asynchrone à l'intérieur de useEffect
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/logements.json');
+                if (!response.ok) {
+                    throw new Error(`Erreur HTTP : ${response.status}`);
+                }
+                const jsonData = await response.json();
+                setData(jsonData);
+            } catch (error) {
+                console.error('Erreur lors du chargement des données :', error);
+            }
+        };
+
+        fetchData(); // Appel de la fonction
     }, []);
 
     if (!data) {
