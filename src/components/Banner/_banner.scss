@@ -7,6 +7,8 @@
   box-shadow: 1px 1px 4px black;
   position: relative;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 100%;
@@ -18,8 +20,6 @@
 
   .banner-title {
     position: absolute;
-    bottom: 30px;
-    left: 40px;
     color: #fff;
     font-size: 48px;
     text-shadow: 1px 1px 4px black;
