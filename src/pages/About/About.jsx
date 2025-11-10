@@ -1,12 +1,11 @@
+import montagne from '../../assets/montagne.png';
+import Banner from '../../components/Banner/Banner';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 function About() {
   return (
     <div className="container">
-      <div className="about-banner banner">
-        <img src="../src/assets/montagne.png" alt="Un paysage avec des montagnes" />
-      </div>
-
+      <Banner image={montagne} altText="Des Montagnes enneigées" />
       <Dropdown title="Fiabilité">
         <p>
           Les annonces postées sur Kasa garantissent une fiabilité totale.
