@@ -1,16 +1,17 @@
-.cards-container {
+.cards__container {
   background: $secondary-color;
   border-radius: 20px;
   padding: 40px;
   max-width: 1240px;
   margin-top: 50px;
 
-  .cards {
+  .cards__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    list-style-type: none;
 
-    .card {
+    .cards__item {
       width: 350px;
       padding: 20px;
       position: relative;
