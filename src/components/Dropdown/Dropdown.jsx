@@ -9,18 +9,13 @@ function Dropdown({ title, children }) {
     <div className="dropdown">
       <div className="dropdown__title" onClick={() => setIsOpen(prev => !prev)}>
         <h2>{title}</h2>
-        {isOpen ? (
-          <FaChevronUp className="chevronUp__icon" />
-        ) : (
-          <FaChevronDown className="chevronDown__icon" />
-        )}
+        <FaChevronDown className={`chevron ${isOpen ? "rotate" : ""}`} />
+
       </div>
 
-      {isOpen && (
-        <div className="dropdown__content">
-          {children}
-        </div>
-      )}
+      <div className={`dropdown__content ${isOpen ? "open" : ""}`}>
+        {children}
+      </div>
     </div>
   );
 }
