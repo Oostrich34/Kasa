@@ -1,16 +1,11 @@
-import '../../styles/index.scss';
-import logements from "../../../public/logements.json";
+import '../../styles/index.scss'
 
-
-function Card() {
-    const logementsItems = logements.map((logement) =>
-        <li key ={logement.id} className='cards__item'>
-            <h3>{logement.title}</h3>
-            <img src={logement.cover} alt={logement.title} />
+function Card({ title, cover }) {
+    return (
+        <li className='cards__item'>
+            <h3>{title}</h3>
+            <img src={cover} alt={title} />
         </li>
     );
-    return (
-        <ul className='cards__list'>{logementsItems}</ul>
-    )
 }
 export default Card;
