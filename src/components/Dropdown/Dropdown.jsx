@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa6";
 import '../../styles/index.scss';
 
 function Dropdown({ title, children }) {
@@ -7,9 +7,9 @@ function Dropdown({ title, children }) {
 
   return (
     <div className="dropdown">
-      <div className="dropdown__title" onClick={() => setIsOpen(prev => !prev)}>
+      <div className="dropdown__title">
         <h2>{title}</h2>
-        <FaChevronDown className={`chevron ${isOpen ? "rotate" : ""}`} />
+        <FaChevronDown className={`chevron ${isOpen ? "rotate" : ""}`}  onClick={() => setIsOpen(prev => !prev)}/>
 
       </div>
 
