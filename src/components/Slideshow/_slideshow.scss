@@ -6,6 +6,7 @@
 }
 .logementPicture img {
     object-fit: cover;
+    border-radius: 25px;
 }
 
 .arrow, .logementPicture p {
@@ -13,8 +14,12 @@
 }
 
 .leftArrow, .rightArrow {
-    top: 50%;
+    top: 275px;
     font-size: 10rem;
+}
+
+.leftArrow {
+    left: 350px;
 }
 
 .rightArrow {
