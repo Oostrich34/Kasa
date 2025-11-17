@@ -6,7 +6,9 @@ import Dropdown from '../../components/Dropdown/Dropdown';
 
 function Logements() {
   const { id } = useParams();
-  const logement = logements.find(l => l.id === id);
+  // Regarder dans la liste de logements l'identifiant de chaque logement et comparer s'il
+  // est celui qui a ete fourni en parametre a la route
+  const logement = logements.find(logement => logement.id === id);
 
 
   return (
