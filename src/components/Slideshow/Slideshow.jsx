@@ -1,8 +1,9 @@
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { useState } from 'react';
+import '../../styles/index.scss';
 
-function Slideshow({ pictures, title}) {
+function Slideshow({ pictures, title }) {
     const [currentPicture, setCurrentPicture] = useState(0);
     const totalPictures = pictures.length;
 
