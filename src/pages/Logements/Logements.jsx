@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import logements from "../../../public/logements.json";
+import logements from '../../data/logements.json';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
@@ -16,6 +16,32 @@ function Logements() {
         pictures={logement.pictures}
         title={logement.title}
       />
+
+    <div className='logementInfo'>
+        <h3>{logement.title}</h3>
+        <h4>{logement.location}</h4>
+
+      </div>
+
+      <div className='logementTags'>
+
+      </div>
+
+      <div className='logementRate'>
+
+      </div>
+
+      <Dropdown title="Description">
+        <p>{logement.description}</p>
+      </Dropdown>
+
+      <Dropdown title="Equipements">
+        <ul>
+          {logement.equipments.map((equipement, index) => (
+            <li key={index}>{equipement}</li>
+          ))}
+        </ul>
+      </Dropdown>
 
     </div>
   );
