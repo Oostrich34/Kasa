@@ -12,40 +12,50 @@ function Logements() {
 
 
   return (
-    <div className='container'>
+    <section className='logementContainer'>
 
       <Slideshow 
         pictures={logement.pictures}
         title={logement.title}
       />
 
-    <div className='logementInfo'>
-        <h3>{logement.title}</h3>
-        <h4>{logement.location}</h4>
-
-      </div>
-
-      <div className='logementTags'>
-
-      </div>
-
-      <div className='logementRate'>
-
-      </div>
-
-      <Dropdown title="Description">
-        <p>{logement.description}</p>
-      </Dropdown>
-
-      <Dropdown title="Equipements">
-        <ul>
-          {logement.equipments.map((equipement, index) => (
-            <li key={index}>{equipement}</li>
+      <div className='logementInfos'>
+        <div className='logementTitle'>
+          <h2>{logement.title}</h2>
+          <h4>{logement.location}</h4>
+        
+          {logement.tags.map((tag, index) => (
+            <span key={index}>
+              {tag}
+            </span>
           ))}
-        </ul>
-      </Dropdown>
+        </div>
 
-    </div>
+      
+
+        <div className="logementHostRating">
+          <div className="logementHost">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} alt={`Portrait de ${logement.host.name}, propriétaire du logement`} />
+          </div>
+          {/*<Rating rating={logement.rating} />*/}
+        </div>
+      </div>
+      
+      <div className='logementDropdowns'>
+        <Dropdown title="Description">
+          <p>{logement.description}</p>
+        </Dropdown>
+
+        <Dropdown title="Equipements">
+          <ul>
+            {logement.equipments.map((equipement, index) => (
+              <li key={index}>{equipement}</li>
+            ))}
+          </ul>
+        </Dropdown>
+      </div>
+    </section>
   );
 }
 

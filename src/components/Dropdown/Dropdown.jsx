@@ -8,7 +8,7 @@ function Dropdown({ title, children }) {
   return (
     <div className="dropdown">
       <div className="dropdown__title">
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <FaChevronDown className={`chevron ${isOpen ? "rotate" : ""}`}  onClick={() => setIsOpen(prev => !prev)}/>
 
       </div>
