@@ -1,0 +1,53 @@
+@use '../utils/variables' as v;
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown {
+  margin-top: 2rem;
+  background: v.$secondary-color;
+  border-radius: 5px;
+  width: 1023px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    margin: 2rem 1rem 0;
+    width: auto;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: v.$primary-color;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__content {
+    padding: 0 15px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+  }
+
+  &__content.open {
+    max-height: 500px;
+    opacity: 1;
+    padding: 15px;
+  }
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
+}
