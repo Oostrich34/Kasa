@@ -21,6 +21,7 @@
       background-image: v.$linear-color;
       z-index: 1;
       pointer-events: none;
+      border-radius: 8px;
    }
 
    & img {
@@ -37,6 +38,7 @@
       left: 10px;
       font-size: 18px;
       color: v.$white-color;
+      z-index: 2;
 
       @media (max-width : 768px) {
          top: 190px;

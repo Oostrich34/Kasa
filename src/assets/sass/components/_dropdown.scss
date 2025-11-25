@@ -8,7 +8,6 @@
 
 .dropdown {
   margin-top: 2rem;
-  background: v.$secondary-color;
   border-radius: 5px;
   width: 1023px;
   overflow: hidden;
@@ -31,6 +30,7 @@
 
   &__content {
     padding: 0 15px;
+    background: v.$secondary-color;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
