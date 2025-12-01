@@ -1,5 +1,4 @@
 @use './utils/variables' as v;
-@use './utils/mixins' as m;
 
 @use './vendors/fonts';
 
@@ -8,7 +7,6 @@
 
 @use './pages/home';
 @use './pages/logements';
-@use './pages/about';
 @use './pages/errorPage';
 
 @use './layouts/footer';
